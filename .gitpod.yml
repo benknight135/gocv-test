@@ -2,7 +2,9 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: |
+  - name: Build Go Apps
+    command: |
       cd main && go get -v -t -d ./... && echo building main... && go install .
       cd ../stream && go get -v -t -d ./... && echo building stream... && go install .
       cd ..
+    openMode: split-right
