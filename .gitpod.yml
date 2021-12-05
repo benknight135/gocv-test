@@ -3,6 +3,6 @@ image:
 
 tasks:
   - init: |
-      cd main && go get -v -t -d ./... && go install .
-      cd ../stream && go get -v -t -d ./... && go install .
+      cd main && go get -v -t -d ./... && echo building main... && go install .
+      cd ../stream && go get -v -t -d ./... && echo building stream... && go install .
       cd ..

@@ -1,5 +1,7 @@
 package main
 
+// ref: https://www.rohitmundra.com/video-streaming-server
+
 import (
 	"fmt"
 	"log"
