@@ -4,6 +4,7 @@ image:
 tasks:
   - name: Terminal
     init: cd $GITPOD_REPO_ROOT
+    openMode: split-left
 
   - name: Build Go Apps
     command: |
