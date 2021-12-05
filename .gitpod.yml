@@ -2,12 +2,12 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
+  - name: Terminal
+    command: clear
+    openMode: split-left
+
   - name: Build Go Apps
-    command: |
+    init: |
       ./build.sh
       test $? -eq 0 && exit || echo "Build Failed"
     openMode: split-right
-
-  - name: Terminal
-    init: clear
-    openMode: split-left
