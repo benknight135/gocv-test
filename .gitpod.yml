@@ -4,6 +4,7 @@ image:
 tasks:
   - name: Build Go Apps
     init: |
+      clear
       ./build.sh
       test $? -eq 0 && exit || echo "Build Failed"
     openMode: split-right
