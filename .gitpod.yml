@@ -6,7 +6,7 @@ tasks:
     command: |
       cd $GITPOD_REPO_ROOT/main && go get -v -t -d ./... && echo building main... && go install .
       cd $GITPOD_REPO_ROOT/main && go get -v -t -d ./... && echo building stream... && go install .
-      cd $GITPOD_REPO_ROOT
+      exit
     openMode: split-right
 
   - name: Terminal
