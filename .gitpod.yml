@@ -4,9 +4,8 @@ image:
 tasks:
   - name: Build Go Apps
     command: |
-      cd $GITPOD_REPO_ROOT/main && go get -v -t -d ./... && echo building main... && go install .
-      cd $GITPOD_REPO_ROOT/main && go get -v -t -d ./... && echo building stream... && go install .
-      exit
+      ./build.sh
+      test $? -eq 0 && exit || echo "Build Failed"
     openMode: split-right
 
   - name: Terminal
