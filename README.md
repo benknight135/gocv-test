@@ -1,1 +1,1 @@
-# gocv-test
+# Go OpenCV test
