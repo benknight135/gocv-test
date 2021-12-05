@@ -7,5 +7,5 @@ RUN sudo apt-get update && \
     && sudo rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /thirdparty && chown -R gitpod:gitpod /thirdparty && \
-    cd thirdparty && git clone https://github.com/hybridgroup/gocv.git && \
+    cd /thirdparty && git clone https://github.com/hybridgroup/gocv.git && \
     cd gocv && make install
