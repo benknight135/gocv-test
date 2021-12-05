@@ -9,3 +9,5 @@ RUN sudo apt-get update && \
 RUN sudo mkdir -p /thirdparty && sudo chown -R gitpod:gitpod /thirdparty && \
     cd /thirdparty && git clone https://github.com/hybridgroup/gocv.git && \
     cd gocv && make install
+
+CMD ["/bin/bash"]
