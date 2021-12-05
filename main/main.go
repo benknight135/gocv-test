@@ -30,7 +30,7 @@ func getAlbums(c *gin.Context) {
 }
 
 func main() {
-	router := gin.Default()
+	//router := gin.Default()
 	router.GET("/albums", getAlbums)
 
 	img := gocv.IMRead("static/test.png", gocv.IMReadColor)
